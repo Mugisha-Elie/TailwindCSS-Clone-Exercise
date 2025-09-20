@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live view Page</title>
     <link rel="stylesheet" href="./src/output.css">
+    <script src="./src/main.js" defer></script>
 </head>
 <body>
-    <section class="min-h-screen bg-[url('/images/banner-bg.jpeg')] bg-cover bg-center bg-no-repeat space-y-17  p-3 rounded-b-4xl">
-    
-        <nav class="flex py-4 px-6 md:py-10 md:px-12 justify-between">
 
-            <img class="aspect-auto h-10 sm:h-15" src="images/logo.png" alt="lugx logo">
+
+    <nav id="nav-bar" class="flex py-4 px-6 md:py-10 md:px-12 justify-between bg-transparent absolute top-0 z-10 w-full">
+
+        <img class="aspect-auto h-10 sm:h-15" src="images/logo.png" alt="lugx logo">
 
             <ul class="hidden sm:flex items-center text-white gap-3 text-sm md:text-[1rem] md:gap-10 lg:gap-15 md:mr-10">
                 <li class="bg-blue-500 p-1 px-2 md:px-3 lg:px-4 rounded-2xl cursor-pointer">Home</li>
@@ -21,20 +22,23 @@
                 <li class="bg-red-400 p-1 px-2 rounded-2xl md:px-4 md:py-2 uppercase font-bold cursor-pointer">Sign In</li>
             </ul>
 
-        </nav>
+    </nav>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center align-items-center p-10">
+    <section class=" bg-[url('/images/banner-bg.jpeg')] bg-cover bg-center bg-no-repeat space-y-17  p-3 rounded-b-[8rem] z-10  pb-15">
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center align-items-center p-10 pt-45">
             <div class="space-y-20 self-center">
                 <div class="">
                     <h1 class="uppercase text-white text-xl font-semibold">Welcome to Lugx</h1>
-                    <h2 class="mt-5 uppercase text-white text-5xl font-bold">Best Gaming Site Ever!</h2>
+                    <h2 class="mt-5 uppercase text-white text-5xl font-bold font-gothic">Best Gaming Site Ever!</h2>
                     <img src="images/caption-dec.png" alt="">
                     <p class="text-white mt-20 font-gothic">LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.</p>
                 </div>
 
-                <div class="mt-5 w-1/2 md:w-6/10" >
+                <div class="mt-5 w-full md:w-6/10" >
                     <div class="bg-white flex justify-between rounded-3xl">
-                        <h3 class="hidden lg:block self-center justify-self-start ml-5 text-gray-400" >Type Something</h3>
+                        <h3 class="hidden lg:block self-center justify-self-start ml-5 text-gray-400">Type Something</h3>
                         <div class="bg-red-400 text-white rounded-3xl py-2 px-5">Search</div>
                     </div>
                 </div>
@@ -52,5 +56,152 @@
         </div>
         
     </section>
+
+    <!-- <section class="relative border mx-20">
+        <div class="absolute -top-8 md:-top-10 left-0 right-0 z-5 flex flex-col gap-4 sm:flex-row justify-center">
+            <div class="p-20 shadow-2xl bg-white rounded-2xl">
+                <div class="bg-blue-500">
+                    <img src="images/featured-01.png" alt="">
+                </div>
+            </div>
+            <div class="p-20 shadow-2xl bg-white rounded-2xl"></div>
+            <div class="p-20 shadow-2xl bg-white rounded-2xl"></div>
+            <div class="p-20 shadow-2xl bg-white rounded-2xl"></div>
+        </div>
+    </section> -->
+
+
+    <section class="relative flex justify-center items-center">
+        <div class="-mt-24 z-40">
+            <div class="row flex flex-col md:flex-row sm:flex-wrap gap-6 p-8 justify-center items-center">
+                <div class="shadow-2xl rounded-2xl bg-white">
+                    <a href="#">
+                        <div class="flex flex-col p-5 justify-center items-center gap-5 px-15">
+                            <div class="bg-blue-600 rounded-full p-5">
+                                <img class="max-w-[44px]" src="images/featured-01.png" alt="">
+                            </div>
+                            <h4 class="font-gothic font-bold text-xl tracking-tighter uppercase">Free Storage</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="shadow-2xl rounded-2xl bg-white">
+                    <a href="#">
+                        <div class="flex flex-col p-5 justify-center items-center gap-5 px-15">
+                            <div class="bg-blue-600 rounded-full p-5">
+                                <img class="max-w-[44px]" src="images/featured-02.png" alt="">
+                            </div>
+                            <h4 class="font-gothic font-bold text-xl tracking-tighter uppercase">User More</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="rounded-2xl shadow-2xl bg-white">
+                    <a href="#">
+                       <div class="flex flex-col p-5 justify-center items-center gap-5 px-15">
+                            <div class="bg-blue-600 rounded-full p-5">
+                                <img class="max-w-[44px]" src="images/featured-03.png" alt="">
+                            </div>
+                            <h4 class="font-gothic font-bold text-xl tracking-tighter uppercase">Reply ready</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="shadow-2xl rounded-2xl bg-white">
+                    <a href="#">
+                        <div class="flex flex-col p-5 justify-center items-center gap-5 px-15">
+                            <div class="bg-blue-600 rounded-full p-5">
+                                <img class="max-w-[44px]" src="images/featured-04.png" alt="">
+                            </div>
+                            <h4 class="font-gothic font-bold text-xl tracking-tighter uppercase">Easy Layout</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-20 px-10 sm:px-17">
+        <div class="mb-20">
+            <h4 class="text-red-400 uppercase font-bold text-sm md:text-xl mb-3 md:mb-6">Trending</h4>
+            <div class="flex justify-between items-center">
+                <h2 class="font-bold text-3xl md:text-5xl">Trending Games</h2>
+                <h2 class="bg-red-400 text-white p-6 uppercase tracking-tight font-blod px-2 py-2 md:px-4 md:py-3 text-sm rounded-3xl">View All</h2>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-items-stretch">
+            
+            <div class="rounded-3xl flex flex-col gap-2 bg-black/10 relative">
+
+                <img class="aspect-auto rounded-3xl" src="images/trending-01.jpeg" alt="">
+                <div class="p-3 px-5">
+                    <h4 class="text-gray-500">Action</h4>
+                    <h3 class="font-semibold text-lg">Assassins creed</h3>
+                </div>
+                <div class="bg-blue-500 p-2 absolute right-4 top-4 rounded-xl text-end -space-y-1 px-3">
+                    <h3 class="text-white line-through">$28</h3>
+                    <h3 class="text-xl font-bold text-white t">$20</h3>
+                </div>
+                <div class="bg-red-400 rounded-full p-3 absolute bottom-4 right-4">
+                    <img class="h-5" src="images/Lock.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="rounded-3xl flex flex-col gap-2 bg-black/10 relative">
+
+                <img class="aspect-auto rounded-3xl" src="images/trending-02.jpeg" alt="">
+                <div class="p-3 px-5">
+                    <h4 class="text-gray-500">Action</h4>
+                    <h3 class="font-semibold text-xl">Assassins creed</h3>
+                </div>
+                <div class="bg-blue-500 p-2 absolute right-4 top-4 rounded-xl text-end -space-y-1 px-3">
+                    <h3 class="text-white line-through"></h3>
+                    <h3 class="text-xl font-bold text-white t">$44</h3>
+                </div>
+                <div class="bg-red-400 rounded-full p-3 absolute bottom-4 right-4">
+                    <img class="h-5" src="images/Lock.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="rounded-3xl flex flex-col gap-2 bg-black/10 relative">
+
+                <img class="aspect-auto w-full rounded-3xl" src="images/trending-03.jpeg" alt="">
+                <div class="p-3 px-5">
+                    <h4 class="text-gray-500">Action</h4>
+                    <h3 class="font-semibold text-xl">Assassins creed</h3>
+                </div>
+                <div class="bg-blue-500 p-2 absolute right-4 top-4 rounded-xl text-end -space-y-1 px-3">
+                    <h3 class="text-white line-through">$64</h3>
+                    <h3 class="text-xl font-bold text-white t">$44</h3>
+                </div>
+                <div class="bg-red-400 rounded-full p-3 absolute bottom-4 right-4">
+                    <img class="h-5" src="images/Lock.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="rounded-3xl flex flex-col gap-2 bg-black/10 relative">
+
+                <img class="rounded-3xl" src="images/trending-04.jpeg" alt="">
+                <div class="p-3 px-5">
+                    <h4 class="text-gray-500">Action</h4>
+                    <h3 class="font-semibold text-xl">Assassins creed</h3>
+                </div>
+                <div class="bg-blue-500 p-2 absolute right-4 top-4 rounded-xl text-end -space-y-1 px-3">
+                    <h3 class="text-xl font-bold text-white t">$32</h3>
+                </div>
+                <div class="bg-red-400 rounded-full p-3 absolute bottom-4 right-4">
+                    <img class="h-5" src="images/Lock.svg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
 </body>
 </html>

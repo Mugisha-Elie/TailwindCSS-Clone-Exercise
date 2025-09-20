@@ -1,8 +1,10 @@
-@import "tailwindcss";
-
 @import url('https://fonts.googleapis.com/css2?family=Galindo&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
+@import "tailwindcss";
+
+
 
 @theme {
     --font-gothic: "Gothic", Arial;
